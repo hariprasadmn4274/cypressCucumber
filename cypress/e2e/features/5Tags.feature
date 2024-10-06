@@ -1,3 +1,6 @@
+# commond to run : npx cypress run --env TAGS="@Sanity"
+
+
 
 @Regression
 Feature: newtour web page login through datatable 

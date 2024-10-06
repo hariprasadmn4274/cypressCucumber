@@ -1,0 +1,20 @@
+/*
+Without the jsconfig.json, your VS Code may not provide you with auto-suggestions
+when typing Cypress methods (such as cy.visit()). Since you mentioned that you're not getting correct suggestions 
+(like csskewy instead of cy.get), creating this configuration file helps the editor understand your project better,
+ ensuring the right IntelliSense features are enabled.
+*/
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "allowJs": true,
+      "checkJs": false,
+      "types": ["cypress"]
+    },
+    "include": [
+      "cypress/**/*.js",
+      "cypress/**/*.ts"
+    ]
+}
+  

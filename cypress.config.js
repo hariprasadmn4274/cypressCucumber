@@ -8,5 +8,9 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())//1.
     },
     specPattern: 'cypress/e2e/**/*.feature',// 1.to read this files
+     // Option to run tests based on tags
+     env: {
+      TAGS: "@Sanity or @Smoke or @Regression"
+    }
   },
 });
